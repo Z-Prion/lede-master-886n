@@ -133,6 +133,7 @@ jobs:
         
     - name: Download package
       id: package
+      if: (github.event.inputs.ssh == 'false')
       run: |
         cd openwrt
         make defconfig
@@ -142,6 +143,7 @@ jobs:
 
     - name: Compile the firmware
       id: compile
+      if: (github.event.inputs.ssh == 'false')
       run: |
         cd openwrt
         echo -e "$(nproc) thread compile"
