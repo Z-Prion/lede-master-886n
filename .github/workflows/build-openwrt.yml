@@ -21,7 +21,7 @@ on:
 
 env:
   REPO_URL: https://github.com/Z-Prion/lede.git
-  REPO_BRANCH: master
+  REPO_BRANCH: 20200416
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: 123.config
   # CONFIG_FILE: 802n-v1.config
